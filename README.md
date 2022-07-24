@@ -10,9 +10,6 @@
 </p>
 
 
-# is in development !!!
-
-
 INSTALLATION
 ------------
 

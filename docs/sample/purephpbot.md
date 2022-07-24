@@ -270,6 +270,7 @@ switch ($_GET['go'] ?? null) {
         <li><a href="?go=bot-push-text">pushText</a></li>
         <li><a href="?go=bot-push-sticker">pushSticker</a></li>
         <li><a href="?go=bot-push-image">pushImage</a></li>
+        <li><a href="?go=bot-push-video">pushVideo</a></li>
         <li><a href="?go=bot-push-location">pushLocation</a></li>
         <li><a href="?go=bot-push-json">pushJson</a></li>
         <li><a href="?go=bot-push-build">pushBuild</a></li>
@@ -280,6 +281,7 @@ switch ($_GET['go'] ?? null) {
         <li><a href="?go=bot-multicast-text">multicastText</a></li>
         <li><a href="?go=bot-multicast-sticker">multicastSticker</a></li>
         <li><a href="?go=bot-multicast-image">multicastImage</a></li>
+        <li><a href="?go=bot-multicast-video">multicastVideo</a></li>
         <li><a href="?go=bot-multicast-location">multicastLocation</a></li>
         <li><a href="?go=bot-multicast-json">multicastJson</a></li>
         <li><a href="?go=bot-multicast-build">multicastBuild</a></li>
@@ -290,6 +292,7 @@ switch ($_GET['go'] ?? null) {
         <li><a href="?go=bot-broadcast-text">broadcastText</a></li>
         <li><a href="?go=bot-broadcast-sticker">broadcastSticker</a></li>
         <li><a href="?go=bot-broadcast-image">broadcastImage</a></li>
+        <li><a href="?go=bot-broadcast-video">broadcastVideo</a></li>
         <li><a href="?go=bot-broadcast-location">broadcastLocation</a></li>
         <li><a href="?go=bot-broadcast-json">broadcastJson</a></li>
         <li><a href="?go=bot-broadcast-build">broadcastBuild</a></li>

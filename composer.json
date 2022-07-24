@@ -1,0 +1,33 @@
+{
+    "name": "vanchaiy/line-sdk-php",
+    "description": "LineBot &  LineNotify SDK for Php pure & support laravel",
+    "keywords": [
+        "line",
+        "line bot",
+        "line notify",
+        "sdk",
+        "laravel"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/vanchaiy/laravel-line-sdk",
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "LineSDK\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "LINEBot": "LineSDK\\Laravel\\Facades\\Bot",
+                "LINENotify": "LineSDK\\Laravel\\Facades\\Notify"
+            },
+            "providers": [
+                "LineSDK\\Laravel\\LineServiceProvider"
+            ]
+        }
+    }
+}

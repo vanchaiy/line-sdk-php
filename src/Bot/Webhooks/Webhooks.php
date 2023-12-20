@@ -41,7 +41,7 @@ class Webhooks
     public function events()
     {
         if (!is_null($this->events->events ?? null)) {
-            return $this->events->events[0];
+            return $this->events->events;
         } else {
             return [];
         }

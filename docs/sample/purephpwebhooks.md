@@ -22,8 +22,8 @@ $lineBot = new LineSDK\Bot([
 ]);
 
 $response = $lineBot->webhooks()->events();
-if ($response) {
-    $lineBot->reply($response->replyToken)->text(json_encode($response));
+foreach ($response as $event) {
+    $lineBot->reply($event->replyToken)->text(json_encode($event));
 }
 
 echo 'ready';

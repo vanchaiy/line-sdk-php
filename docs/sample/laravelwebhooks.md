@@ -124,8 +124,8 @@ class lineWebhookDemo extends Controller
     public function webhook()
     {
         $response = LineBot::webhooks()->events();
-        if($response){
-          LineBot::reply($response->replyToken)->text(json_encode($response));
+        foreach ($response as $event) {
+          LineBot::reply($event->replyToken)->text(json_encode($event));
         }
 
         return 'ready';
